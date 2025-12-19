@@ -1,0 +1,17 @@
+service_account_key: &service_account_key looker-studio-pro-427717-3b4c1aa4a357.json
+
+CloudStorage:
+    bucket_name: takeoff-artifacts-dev
+    expiration_in_minutes: 15
+
+GBQServer:
+    service_account_key: *service_account_key
+    table_name_projects: drywall_takeoff.projects
+    table_name_plans: drywall_takeoff.plans
+    table_name_models: drywall_takeoff.models
+
+CloudRun:
+    origins_cors:
+        - http://localhost:5172
+    APIs:
+        wall_detector: https://wall-detector-834967602665.us-central1.run.app
