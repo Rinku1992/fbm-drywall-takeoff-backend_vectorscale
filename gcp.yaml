@@ -16,4 +16,4 @@ CloudRun:
         - http://localhost:5172
         - http://localhost:5173
     APIs:
-        wall_detector: https://wall-detector-834967602665.us-central1.run.app
+        wall_detector: https://wall-detector-460679066182.us-central1.run.app
