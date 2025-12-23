@@ -1,7 +1,7 @@
 service_account_key: &service_account_key looker-studio-pro-427717-3b4c1aa4a357.json
 
 CloudStorage:
-    bucket_name: takeoff-artifacts-dev
+    bucket_name: drywall-takeoff-artifacts-dev
     expiration_in_minutes: 15
 
 GBQServer:
