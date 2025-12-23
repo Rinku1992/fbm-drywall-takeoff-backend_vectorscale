@@ -1,11 +1,12 @@
-service_account_key: &service_account_key looker-studio-pro-427717-3b4c1aa4a357.json
+service_drywall_account_key: &service_account_key prj-fbm-drywall-dev-397b5755cf2f.json
+service_compute_account_key: &service_account_key prj-fbm-drywall-dev-ee657d61c363.json
 
 CloudStorage:
     bucket_name: drywall-takeoff-artifacts-dev
     expiration_in_minutes: 15
 
 GBQServer:
-    service_account_key: *service_account_key
+    service_account_key: *service_compute_account_key
     table_name_projects: drywall_takeoff.projects
     table_name_plans: drywall_takeoff.plans
     table_name_models: drywall_takeoff.models
