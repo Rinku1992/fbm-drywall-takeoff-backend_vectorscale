@@ -1,7 +1,7 @@
 service_compute_account_key: &service_compute_account_key /tmp/prj-fbm-drywall-dev-ee657d61c363.json
 
 SecretManager:
-    service_drywall_account_key: projects/460679066182/secrets/service_drywall_account_key/versions/latest
+    service_compute_account_key: projects/460679066182/secrets/service_compute_account_key/versions/latest
 
 CloudStorage:
     bucket_name: drywall-takeoff-artifacts-dev
