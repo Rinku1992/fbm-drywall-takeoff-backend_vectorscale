@@ -1,5 +1,5 @@
-service_drywall_account_key: &service_drywall_account_key /tmp/prj-fbm-drywall-dev-397b5755cf2f.json
-service_compute_account_key: &service_compute_account_key /tmp/prj-fbm-drywall-dev-ee657d61c363.json
+service_drywall_account_key: &service_drywall_account_key prj-fbm-drywall-dev-397b5755cf2f.json
+service_compute_account_key: &service_compute_account_key prj-fbm-drywall-dev-ee657d61c363.json
 
 VertexAI:
     service_account_key: *service_drywall_account_key
@@ -30,12 +30,8 @@ VertexAI:
             - asia-southeast1: [1.3521, 103.8198]
             - australia-southeast1: [-33.8688, 151.2093] 
         parameters:
-            temperature : 0
+            temperature: 0
         max_retry: 5
-
-SecretManager:
-    service_drywall_account_key: projects/460679066182/secrets/service_drywall_account_key/versions/latest
-    service_compute_account_key: projects/460679066182/secrets/service_compute_account_key/versions/latest
 
 CloudStorage:
     bucket_name: drywall-takeoff-artifacts-dev
@@ -43,6 +39,7 @@ CloudStorage:
 
 GBQServer:
     service_account_key: *service_compute_account_key
+    KMS_key: projects/prj-fbm-drywall-dev/locations/us/keyRings/prj-fbm-drywall-dev-us-key-ring/cryptoKeys/prj-fbm-drywall-dev-us-key
     table_name_projects: drywall_takeoff.projects
     table_name_plans: drywall_takeoff.plans
     table_name_models: drywall_takeoff.models
