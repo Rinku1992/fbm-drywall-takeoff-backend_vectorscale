@@ -1,5 +1,6 @@
 service_drywall_account_key: &service_drywall_account_key prj-fbm-drywall-dev-397b5755cf2f.json
 service_compute_account_key: &service_compute_account_key prj-fbm-drywall-dev-ee657d61c363.json
+geolite_database: GeoLite2-City.mmdb
 
 VertexAI:
     service_account_key: *service_drywall_account_key
