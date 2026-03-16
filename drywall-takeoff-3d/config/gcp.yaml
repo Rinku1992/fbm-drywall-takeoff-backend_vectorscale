@@ -32,6 +32,7 @@ VertexAI:
         parameters:
             temperature: 0
             seed: 0
+            response_mime_type: application/json
         max_retry: 5
 
 CloudStorage:
