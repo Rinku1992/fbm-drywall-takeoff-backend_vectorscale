@@ -52,6 +52,10 @@ CloudStorage:
     bucket_name: drywall-takeoff-artifacts-dev
     expiration_in_minutes: 15
 
+PubSub:
+    service_account_key: *service_compute_account_key
+    topic_name: projects/prj-fbm-drywall-dev/topics/floorplan_extraction_in_progress
+
 CloudRun:
     origins_cors:
         - http://localhost:5172
