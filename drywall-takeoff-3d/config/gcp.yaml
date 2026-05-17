@@ -63,7 +63,7 @@ Email:
     app_name: fbm-drywall-email
     client_id: 7e0baeff-4eb7-4a1d-bfc4-16f94366b113
     tenant_id: 8db90014-ca66-493d-b1b1-aa9ce0ba9aed
-    Client_Secret: REDACTED
+    REDACTED
 
 CloudRun:
     origins_cors:
