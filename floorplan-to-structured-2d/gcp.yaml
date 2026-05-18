@@ -56,6 +56,12 @@ PubSub:
     service_account_key: *service_compute_account_key
     topic_name: projects/prj-fbm-drywall-dev/topics/floorplan_extraction_in_progress
 
+Email:
+    app_name: fbm-drywall-email
+    client_id: 7e0baeff-4eb7-4a1d-bfc4-16f94366b113
+    tenant_id: 8db90014-ca66-493d-b1b1-aa9ce0ba9aed
+    REDACTED
+
 CloudRun:
     origins_cors:
         - http://localhost:5172
