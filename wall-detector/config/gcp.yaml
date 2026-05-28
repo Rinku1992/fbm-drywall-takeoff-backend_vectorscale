@@ -1,4 +1,4 @@
-service_compute_account_key: &service_compute_account_key /tmp/prj-fbm-drywall-dev-ee657d61c363.json
+service_compute_account_key: &service_compute_account_key prj-fbm-drywall-dev-ee657d61c363.json
 
 SecretManager:
     service_compute_account_key: projects/460679066182/secrets/service_compute_account_key/versions/latest
