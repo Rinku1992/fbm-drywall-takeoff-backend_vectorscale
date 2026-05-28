@@ -61,6 +61,23 @@ GBQServer:
     table_name_model_revisions_2d: drywall_takeoff.model_revisions_2d
     table_name_model_revisions_3d: drywall_takeoff.model_revisions_3d
 
+CloudSQL:
+    service_account_key: *service_drywall_account_key
+    connection_name: prj-fbm-drywall-dev:us-central1:drywall-takeoff-db
+    database_name: drywall_takeoff
+    driver: pg8000
+    min_pool_size: 1
+    max_pool_size: 3
+    table_name_projects: projects
+    table_name_plans: plans
+    table_name_models: models
+    table_name_pages: pages
+    table_name_sku: sku
+    table_name_users: users
+    table_name_groups: groups
+    table_name_model_revisions_2d: model_revisions_2d
+    table_name_model_revisions_3d: model_revisions_3d
+
 CloudRun:
     origins_cors:
         - http://localhost:5172
