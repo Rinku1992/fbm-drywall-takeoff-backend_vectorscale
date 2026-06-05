@@ -1,4 +1,4 @@
-service_drywall_account_key: prj-fbm-drywall-dev-397b5755cf2f.json
-service_compute_account_key: prj-fbm-drywall-dev-ee657d61c363.json
+# service_drywall_account_key: prj-fbm-drywall-dev-397b5755cf2f.json
+# service_compute_account_key: prj-fbm-drywall-dev-ee657d61c363.json
 CloudStorage:
     bucket_name: drywall-takeoff-artifacts-dev
